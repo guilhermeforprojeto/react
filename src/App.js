@@ -1,8 +1,10 @@
 import React from "react";
 
+import './App.css';
+
 const App = () => {
   const message = "Hello Word com JS";
-  return <h1>{message} E  Hello Wordcom HTML</h1>;
+  return <div className="container"></div>
     
      
   
