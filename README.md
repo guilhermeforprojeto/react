@@ -1,3 +1,20 @@
+# OBS.:
+Onde tudo começou 
+https://www.youtube.com/watch?v=ErjWNvP6mko&t=1048s
+
+Comcei na minha maquuina Linux esse projeto quando fiz o git clone para minha maquuuina windwos precisei destes comandos 
+
+primeiro instalar o NODEJS
+Então apos use esse comando:
+
+npm install react-scripts --save
+
+
+
+# Daqui para baixo foi automatico no processo e para cima são meus comentarios.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
