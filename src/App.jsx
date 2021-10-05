@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
 import Tasks from "./components/Tasks";
+import AddTask from "./components/AddTask";
 import './App.css';
+import Button from "./components/Button";
+
 
 const App = () => {
   // let message = "Hello Word com JS";
@@ -20,6 +23,7 @@ const App = () => {
   return (
       <>
           <div className="container">
+          <AddTask />
           <Tasks  tasks={tasks}/>
           </div>
            
