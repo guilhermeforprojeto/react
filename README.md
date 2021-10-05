@@ -9,6 +9,10 @@ Então apos use esse comando:
 
 npm install react-scripts --save
 
+Vamos usar também
+
+ npm install uuid
+
 
 
 # Daqui para baixo foi automatico no processo e para cima são meus comentarios.

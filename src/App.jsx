@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import './App.css';
-import Button from "./components/Button";
 
 
 const App = () => {
@@ -20,10 +19,24 @@ const App = () => {
       completed: true,
     },
   ])
+
+  const handleTaskAddition = (taksTitle) => {
+    // vai pegar o inputDate do AddTask e adicionar em taksTitle
+ 
+    const newTaks = [...tasks, {
+      title: taksTitle,
+      id: Math.random(10),
+      completed: false,
+    }]
+      setTasks(newTaks)
+      //vai setar o state adicionado
+      // uma nova tarega com os dados trabalhados até chegara qui
+  }
+
   return (
       <>
           <div className="container">
-          <AddTask />
+          <AddTask handleTaskAddition={handleTaskAddition} />
           <Tasks  tasks={tasks}/>
           </div>
            
