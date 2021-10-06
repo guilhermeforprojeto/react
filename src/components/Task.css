@@ -12,6 +12,13 @@
 .task-title {
     cursor: pointer;
 }
+
+.buttons-container{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .remove-task-button,
 .see-task-details-button {
     cursor: pointer;
