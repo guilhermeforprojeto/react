@@ -15,6 +15,8 @@ Vamos usar também
 
  npm install react-icons --save
 
+ npm install react-router-dom
+
 
 
 # Daqui para baixo foi automatico no processo e para cima são meus comentarios.
