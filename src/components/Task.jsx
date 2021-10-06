@@ -5,8 +5,8 @@ import './Task.css';
 const Task = ({ task, handleTaskClick }) => {
     return(
         <div 
-        className="task-container" 
-        style={task.completed ? {borderLeft: "6px solid chartreuse" } : {}}
+            className="task-container" 
+            style={task.completed ? {borderLeft: "6px solid chartreuse" } : {borderLeft: "6px solid #434" }}
 
         >
             <div className="task-title" onClick={() => handleTaskClick(task.id)}>

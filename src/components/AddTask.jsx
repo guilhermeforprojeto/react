@@ -17,7 +17,7 @@ const AddTask = ({handleTaskAddition}) => {
         //handleAddTaskClick O evento click no botão adicionar 
         handleTaskAddition(inputDate);
         //Apos clicar o valor de inputDate Sera enviado para handleTaskAddition 
-        setInputDate('') //aqui deixa o setInputDate favio apos setar
+        setInputDate('') //aqui deixa o setInputDate vazio apos setar
     };
     return(
         <div className="add-task-container">
