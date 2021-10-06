@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -62,7 +63,7 @@ const App = () => {
             <Route
                 path="/" 
                 exact 
-                render={() => (
+                component={() => (
                     <>
                         <AddTask handleTaskAddition={handleTaskAddition} />
                         <Tasks
@@ -73,7 +74,7 @@ const App = () => {
                     </>
                   )}
               />
-            <Route path="2121"exact render={TaskDetails}/>  
+            <Route path="/:taskTitle"exact component={TaskDetails}/>  
       </div>
     </Router>
   );

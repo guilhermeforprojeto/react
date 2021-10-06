@@ -17,6 +17,8 @@ Vamos usar também
 
  npm install react-router-dom
 
+ npm install axios
+
 
 
 # Daqui para baixo foi automatico no processo e para cima são meus comentarios.
