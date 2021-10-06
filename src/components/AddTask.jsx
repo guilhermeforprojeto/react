@@ -6,17 +6,18 @@ import "./AddTask.css"
 
 
 const AddTask = ({handleTaskAddition}) => {
-    const [inputDate, setIputDate] = useState('')
+    const [inputDate, setInputDate] = useState('')
     //tudo que o usuario digitar vai estar no inputDate
     // o setIputDate( vai estar "lendo" o que for digitado
     const handleInputChange = (e) => {
-            setIputDate(e.target.value);
+        setInputDate(e.target.value);
 
     };
     const handleAddTaskClick = () => {
         //handleAddTaskClick O evento click no botão adicionar 
         handleTaskAddition(inputDate);
         //Apos clicar o valor de inputDate Sera enviado para handleTaskAddition 
+        setInputDate('') //aqui deixa o setInputDate favio apos setar
     };
     return(
         <div className="add-task-container">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {v4 as uuidv4} from 'uuid'
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import './App.css';
@@ -19,13 +19,23 @@ const App = () => {
       completed: true,
     },
   ])
+  const handleTaskClick = (taskid) =>{
+    const newTaks = tasks.map( task => {
+      if (task.id == taskid)
+       return {... task, completed: !task.completed}
+
+       return task;
+    });
+
+    setTasks(newTaks)
+  }
 
   const handleTaskAddition = (taksTitle) => {
     // vai pegar o inputDate do AddTask e adicionar em taksTitle
  
     const newTaks = [...tasks, {
       title: taksTitle,
-      id: Math.random(10),
+      id: uuidv4(),
       completed: false,
     }]
       setTasks(newTaks)
@@ -37,7 +47,7 @@ const App = () => {
       <>
           <div className="container">
           <AddTask handleTaskAddition={handleTaskAddition} />
-          <Tasks  tasks={tasks}/>
+          <Tasks  tasks={tasks} handleTaskClick={handleTaskClick}/>
           </div>
            
       </>
