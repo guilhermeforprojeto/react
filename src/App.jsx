@@ -39,15 +39,25 @@ const App = () => {
       completed: false,
     }]
       setTasks(newTaks)
-      //vai setar o state adicionado
-      // uma nova tarega com os dados trabalhados até chegara qui
+            //vai setar o state adicionado
+            // uma nova tarega com os dados trabalhados até chegara qui
+  }
+
+  const handleTaskDeletion = (taskId) => {
+    const newTaks = tasks.filter(task => task.id != taskId)
+
+    setTasks(newTaks)
   }
 
   return (
       <>
           <div className="container">
           <AddTask handleTaskAddition={handleTaskAddition} />
-          <Tasks  tasks={tasks} handleTaskClick={handleTaskClick}/>
+          <Tasks  
+                tasks={tasks} 
+                handleTaskClick={handleTaskClick}
+                handleTaskDeletion={handleTaskDeletion}
+                />
           </div>
            
       </>
