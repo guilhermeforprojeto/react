@@ -13,6 +13,8 @@ Vamos usar também
 
  npm install uuid
 
+ npm install react-icons --save
+
 
 
 # Daqui para baixo foi automatico no processo e para cima são meus comentarios.
